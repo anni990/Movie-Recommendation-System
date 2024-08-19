@@ -15,10 +15,6 @@ st.markdown(
             color: blue;  
         }
 
-        .sttitle{
-            color: blue;  
-        }
-        
         .stTextInput, .stNumberInput, .stButton>button {
             background-color: #A9A9A9;  
             color: #000000;  
