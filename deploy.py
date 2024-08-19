@@ -85,8 +85,8 @@ if st.button("Recommend"):
     # Display the recommendations
     st.write("Here are some recommended movies 🎬:")
     for movie in recommendations:
-        st.write("<ul>" + "".join(f"<li>{movie}</li>" for movie in recommendations) + "</ul>", unsafe_allow_html=True)
-
+        st.write(f"- {movie}")
+            
 # Feedback section with custom CSS class
 st.markdown('<div class="feedback-section">', unsafe_allow_html=True)
 # Sentiment mapping
