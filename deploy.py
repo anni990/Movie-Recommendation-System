@@ -35,8 +35,7 @@ def recommend(movie):
         return [f"An error occurred: {str(e)}"]
 
 # Streamlit app
-st.write("Hello this is your personal movie recommendation site
-Just type in the movie name and 5 similar movies will be provided to increase your movie experience")
+st.write("Hello this is your personal movie recommendation site\nJust type in the movie name and 5 similar movies will be provided to increase your movie experience")
 st.write("Enter The Movie:")
 x = st.text_input("Movie (First letter capital, proper space, enter the movie name as it may appear on google)")
 
