@@ -9,10 +9,10 @@ st.markdown(
         <style>
         .stApp {
             background-color: #1E90FF;  
-            color: #A9A9A9;  
+            color: #FFFFFF;  
         }
         .stMarkdown h1, .stMarkdown h2, .stMarkdown h3 {
-            color: #A9A9A9;  
+            color: #FFFFFF;  
         }
 
         .stTextInput, .stNumberInput, .stButton>button {
@@ -27,7 +27,7 @@ st.markdown(
         }
         .stMarkdown li {
             padding: 5px 0;
-            color: #A9A9A9;  
+            color: #FFFFFF;  
         }
         /* Custom CSS for feedback section */
         .feedback-section {
