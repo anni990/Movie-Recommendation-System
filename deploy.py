@@ -12,7 +12,7 @@ st.markdown(
             color: #000000;  
         }
         .stMarkdown h1, .stMarkdown h2, .stMarkdown h3 {
-            color: black;  
+            color: blue;  
         }
         .stTextInput, .stNumberInput, .stButton>button {
             background-color: #A9A9A9;  
