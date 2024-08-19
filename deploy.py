@@ -9,10 +9,10 @@ st.markdown(
         <style>
         .stApp {
             background-color: #1E90FF;  
-            color: #000000;  
+            color: #A9A9A9;  
         }
         .stMarkdown h1, .stMarkdown h2, .stMarkdown h3 {
-            color: #000000;  
+            color: #A9A9A9;  
         }
 
         .stTextInput, .stNumberInput, .stButton>button {
