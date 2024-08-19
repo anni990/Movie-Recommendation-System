@@ -87,7 +87,7 @@ if st.button("Recommend"):
     recommendations = recommend(x, number)
     
     # Display the recommendations
-    st.write("Here are some recommended movies 🎬:")
+    st.write(f"Here are some recommended movies similar to {x} 🎬:")
     for movie in recommendations:
         st.write(f"- {movie}")
             
