@@ -29,6 +29,10 @@ st.markdown(
             padding: 5px 0;
             color: #000000;  
         }
+        /* Custom CSS for feedback section */
+        .feedback-section {
+            margin-bottom: 100px;  /* Adjust the margin as needed */
+        }
         
         </style>
         """,
@@ -81,7 +85,22 @@ if st.button("Recommend"):
     # Display the recommendations
     st.write("Here are some recommended movies 🎬:")
     for movie in recommendations:
-        st.write(f"- {movie}")
+        st.write("<ul>" + "".join(f"<li>{movie}</li>" for movie in recommendations) + "</ul>", unsafe_allow_html=True)
+
+# Feedback section with custom CSS class
+st.markdown('<div class="feedback-section">', unsafe_allow_html=True)
+# Sentiment mapping
+sentiment_mapping = [":thumbs_down:", ":thumbs_up:"]
+feedback = st.radio("Give your feedback:", ["👍 Thumbs Up", "👎 Thumbs Down"], index=0)
+
+# Mapping the selection to sentiment
+if feedback == "👍 Thumbs Up":
+    st.write("You selected: 👍")
+    st.write("Thanks for your feedback! 😊")
+elif feedback == "👎 Thumbs Down":
+    st.write("You selected: 👎")
+    st.write("Thanks for your feedback! 😊 We will try to improve. 🤔")
+
 
 # # Test the function
 # movie = input("Enter the name of the movie: ")
