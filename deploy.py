@@ -65,7 +65,7 @@ def recommend(movie, n):
         return [f"An error occurred: {str(e)}"]
 
 # Streamlit app
-st.title("Movie Recommendation Site 😍")
+st.title("***Movie Recommendation Site 😍***")
 st.header("Welcome to your personal movie recommendation site 🎬")
 st.write("Type in the name of a movie, and we'll provide you with similar recommendations!")
 
