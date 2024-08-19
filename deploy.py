@@ -27,7 +27,7 @@ st.markdown(
         }
         .stMarkdown li {
             padding: 5px 0;
-            color: #000000;  
+            color: #A9A9A9;  
         }
         /* Custom CSS for feedback section */
         .feedback-section {
