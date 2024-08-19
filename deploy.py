@@ -15,8 +15,8 @@ st.markdown(
             color: blue;  
         }
 
-        .stTitle, .stHeader{
-                color: blue; 
+        .sttitle{
+            color: blue;  
         }
         
         .stTextInput, .stNumberInput, .stButton>button {
