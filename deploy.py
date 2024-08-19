@@ -33,7 +33,11 @@ st.markdown(
         .feedback-section {
             margin-bottom: 100px;  /* Adjust the margin as needed */
         }
-        
+        .stButton>button:hover {
+        color: #1E90FF;  /* Change text color to blue on hover */
+        border-color: #1E90FF; /* Change border color to blue on hover */
+        }
+
         </style>
         """,
         unsafe_allow_html=True
