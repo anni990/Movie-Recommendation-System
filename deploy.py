@@ -3,42 +3,7 @@ import streamlit as st
 import gzip
 import pickle
 
-# Inject CSS to change the background color and style
-st.markdown(
-        """
-        <style>
-        
-        .stMarkdown h1, .stMarkdown h2, .stMarkdown h3 {
-            color: #FFFFFF;  
-        }
 
-        .stTextInput, .stNumberInput, .stButton>button {
-            background-color: #A9A9A9;  
-            color: #000000;  
-            border: 2px solid #A9A9A9;
-            border-radius: 10px;  
-        }
-        .stMarkdown ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
-        .stMarkdown li {
-            padding: 5px 0;
-            color: #FFFFFF;  
-        }
-        /* Custom CSS for feedback section */
-        .feedback-section {
-            margin-bottom: 100px;  /* Adjust the margin as needed */
-        }
-        .stButton>button:hover {
-        color: #1E90FF;  /* Change text color to blue on hover */
-        border-color: #1E90FF; /* Change border color to blue on hover */
-        }
-
-        </style>
-        """,
-        unsafe_allow_html=True
-    )
 
 # Function to load compressed pickle files
 def load_compressed_pickle(file_path):
