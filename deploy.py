@@ -7,10 +7,10 @@ import pickle
 st.markdown(
         """
         <style>
-        .stApp {
-            background-color: #1E90FF;  
-            color: #FFFFFF;  
-        }
+        # .stApp {
+        #     background-color: #1E90FF;  
+        #     color: #FFFFFF;  
+        # }
         .stMarkdown h1, .stMarkdown h2, .stMarkdown h3 {
             color: #FFFFFF;  
         }
