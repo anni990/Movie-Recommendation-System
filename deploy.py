@@ -87,6 +87,7 @@ def recommend(movie, n):
 st.title("***Movie Recommendation Site*** 😍")
 st.header("Welcome to your personal movie recommendation site 🎬")
 st.write("Type in the name of a movie, and we'll provide you with similar recommendations!")
+st.write("Note: Currently will take input of foreign movies only")
 
 x = st.text_input("Movie Name (e.g., 'Inception')", placeholder="Enter movie name here...")
 number = st.number_input("Number of recommendations", min_value=1, step=1, value=5)
