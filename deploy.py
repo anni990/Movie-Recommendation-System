@@ -2,6 +2,7 @@ import pandas as pd
 import streamlit as st
 import gzip
 import pickle
+import re
 
 # Inject CSS to change the background color and style
 # st.markdown(
@@ -53,6 +54,11 @@ def load_compressed_pickle(file_path):
 final_df = load_compressed_pickle('final_df.pkl.gz')
 similarity = load_compressed_pickle('similarity.pkl.gz')
 
+# Create the 'modified_title' column if it doesn't exist
+if 'modified_title' not in final_df.columns:
+    final_df['modified_title'] = final_df['title'].apply(lambda x: re.sub(r'[^a-zA-Z0-9]', '', x).lower())
+
+
 # Function to recommend movies
 def recommend(movie, n):
     try:
@@ -60,8 +66,11 @@ def recommend(movie, n):
         if not movie:
             return ["Please enter a movie title."]
         
+        # Normalize the input movie title
+        movie_normalized = re.sub(r'[^a-zA-Z0-9]', '', movie).lower()
+        
         # Find the movie index
-        movie_index = final_df[final_df['title'] == movie].index[0]
+        movie_index = final_df[final_df['modified_title'] == movie_normalized].index[0]
         distances = similarity[movie_index]
         
         # Get top 'n' similar movies
